@@ -1,0 +1,24 @@
+{
+  "name": "Du_Fang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wait-on http://localhost:3000 && electron .",
+    "react-start": "cd react-app && npm start",
+    "dev": "concurrently \"npm run react-start\" \"npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^31.2.1"
+  },
+  "dependencies": {
+    "all": "^0.0.0",
+    "react-router-dom": "^6.25.1",
+    "wait-on": "^7.2.0"
+  }
+}
